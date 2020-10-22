@@ -1,13 +1,101 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightslategray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5em;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  background-color: tomato;
+  transition: all 0.25s ease-out;
+}
+
+.timer-green {
+  background-color: limegreen;
+}
+
+.timer-title {
+  font-size: 2em;
+  margin: inherit;
+  font-style: oblique;
+  color: bisque;
+}
+.timer-clock {
+  font-size: 5em;
+  line-height: 0;
+}
+
+.timer button {
+  border-radius: 10px;
+  width: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px;
+  padding: 7px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.timer button:hover {
+  background-color: lightslategray;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sound {
+  position: relative;
+  left: 10%;
+  cursor: default;
+}
+
+.settings .settings-card {
+  text-align: center;
+  font-size: 1.5em;
+  width: 25vh;
+}
+
+.settings p {
+  line-height: 0;
+}
+
+.settings .settings-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.settings .settings-buttons button {
+  font-size: 3em;
+  background-color: lightslategray;
+  border: none;
+  outline: none;
+  color: lightseagreen;
+  border-radius: 50%;
+  line-height: 0;
 }
